@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	overflow: hidden;
+}
+li{
+	list-style: none;
+}
+
+/* NAV */
+.nav{
+	text-align: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 200px;
+	z-index: 1000;
+	width: 70vw;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+}
+.nav > p{
+	font-size: 12px;
+}
+.nav > h1{
+	font-size: 60px;
+	text-align: center;
+	letter-spacing: 1mm;
+	margin: auto;
+}
+.nav > .heading{
+	font-size: 15px;
+	margin-bottom: 20px;
+	color: #51d419;
+	text-shadow: 1px 1px 1px black;
+}
+.nav > ul{
+	margin-top: 30px;
+}
+.nav > ul li{
+	font-size: 12px;
+	display: inline;
+	padding: 5px 10px;
+	background-color:#49ba18;
+	border-radius: 4px;
+	margin-right: 7px;
+	transition: background .3s;
+}
+.nav > ul li:hover{
+	cursor: pointer;
+	background-color: #328011;
+	transition: background .3s;
+}
+.line{
+	position: fixed;
+	top: 0px;
+	height: 5px;
+	width: 100vw;
+	z-index: 1000;
+	background-color: #5af01a;
+	animation: liner 5.4s infinite;
+}
+@keyframes liner {
+	0%{
+		width: 0vw;
+	}
+	90%{
+		width: 100vw;
+	}
+}
+.full-view-about{
+	position: fixed;
+	top: -10vw;
+	left: 60vw;
+	height: 200vh;
+	width: 1000px;
+	z-index: 1000;
+	background-color: #5af01a;
+	transition: 1s;
+	transform: rotate(30deg);
+	animation: view 1s;
+}
+@keyframes view {
+	0%{
+		left: 120vw;
+	}
+	100%{
+		left: 60vw;
+	}
+}
+.full-hide-about{
+	position: fixed;
+	top: -10vw;
+	left: 120vw;
+	height: 200vh;
+	width: 1000px;
+	z-index: 1000;
+	background-color: #5af01a;
+	transition: 1s;
+	transform: rotate(30deg);
+	animation: view2 1s;
+}
+@keyframes view2 {
+	0%{
+		left: 60vw;
+	}
+	100%{
+		left: 120vw;
+	}
+}
+.about-text{
+	position: fixed;
+	top: 40%;
+	left: 70%;
+	transform: translate(-40, -70%);
+	width: 300px;
+	z-index: 1000;
+	color: white;
+	transition: 1s;
+	font-family: 'Roboto', sans-serif;
+	animation: view_about 1s;
+}
+@keyframes view_about {
+	0%{
+		left: 120%;
+	}
+	100%{
+		left: 70%;
+	}
+}
+.about-text-hide{
+	position: fixed;
+	top: 50%;
+	left: 120%;
+	width: 300px;
+	z-index: 1000;
+	color: white;
+	transition: 1s;
+	font-family: 'Roboto', sans-serif;
+	animation: view_about2 1s;
+}
+@keyframes view_about2 {
+	0%{
+		left: 70%;
+	}
+	100%{
+		left: 120%;
+	}
+}
+
+/* SHOWCSE */
+.showcase{
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	width: 400vw;
+	margin-left: 0px;
+	transition: 1s;
+}
+.image1{
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/display_images/novels.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.image2{
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/display_images/comics.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.image3{
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/display_images/lifestyle.webp');
+	background-position: center;
+	background-size: cover;
+}
+.image4{
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/display_images/movies.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+/* Login and sigup form */
+#form > input{
+	padding: 5px 10px;
+	border: none;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+#form > button{
+	padding: 5px 10px;
+	background-color: #3e9e15;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+#form > button:hover{
+	background-color: #70ff33;
+	cursor: pointer;
+	color: gray;
+}
+.login-form{
+	display: block;
+}
+.signup-form{
+	display: none;
+}

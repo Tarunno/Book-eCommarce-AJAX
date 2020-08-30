@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"  />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../Css/books.css">
+		<title>TARUNNO READS | admin</title>
+	</head>
+	<body>
+		<div class="container">
+			<section class="nav">
+				<h1><span class="heading">TARUNNO READS</span><span class="admin">admin</span></h1>
+				<ul>
+					<li> <a href="home.html"><i class="fas fa-home"></i></a> </li>
+					<li> <a href="books.html"><i class="fas fa-book"></i></a> </li>
+					<li> <a href="users.html"><i class="fas fa-users"></i></a> </li>
+					<li> <a href="orders.html"><i class="fas fa-tasks"></i></a> </li>
+				</ul>
+			</section>
+			<section class="table">
+				<h1>Books</h1>
+				<div class="buttons">
+					<input type="text" class="book-search"><button class="book-search-btn" type="button"><i class="fas fa-search"></i></button>
+					<button type="button" onclick="delete_all()" class="delete-all-btn"><i class="far fa-trash-alt"></i><div class="delete-all"></div></button>
+				</div>
+				<table>
+					<thead>
+						<th>ID</th>
+						<th>Book</th>
+						<th>Price</th>
+						<th>Rating</th>
+						<th>Category</th>
+						<th>Quantity</th>
+						<th>Sells</th>
+						<th>Popular</th>
+						<th>Best</th>
+						<th style="width: 38px;">In-stock</th>
+						<th style="width: 30px;">Update</th>
+						<th style="width: 30px;">Delete</th>
+					</thead>
+					<tbody class="table_res">
+					</tbody>
+				</table>
+			</section>
+			<section class="manage">
+				<div class="form-section">
+					<h1>Add book</h1>
+					<p style="color: #28f735; font-weight: bold; margin: 0px 0px 20px 20px; display: block;" class="success"></p>
+					<p style="color: #ff1f2e; font-weight: bold; margin: 0px 0px 20px 20px; display: block;" class="error"></p>
+					<form class="add-book-form">
+						<input type="text" name="name" placeholder="Name"><br>
+						<input type="text" name="price" placeholder="Price"><br>
+						<p>Rating</p>
+						<select name="rating" class="rating">
+			  				  <option value="1">1</option>
+			  				  <option value="2">2</option>
+			  				  <option value="3">3</option>
+			  				  <option value="4">4</option>
+			  				  <option value="5">5</option>
+			  			 </select>
+						 <p>Category </p>
+						 <select name="category" class="category">
+ 			  				  <option value="Novel">Novel</option>
+ 			  				  <option value="Comics">Comics</option>
+ 			  				  <option value="Life style">Life style</option>
+ 			  			 </select><br>
+						<input type="text" name="quantity" placeholder="Quantity"><br>
+						<input type="hidden" name="stock">
+						<textarea name="description">Description...</textarea>
+						<input type="file" name="image" class="file">
+						<button type="submit" name="add-book-submit">Add</button>
+					</form>
+				</div>
+			</section>
+			<section class="footer">
+				<h3> TARUNNO READS | mahadi hasan tarunno</h3>
+				<div class="contect">
+					<i class="fas fa-phone"> <span> 01863987793 </span> </i>
+					<i class="fas fa-envelope"> <span> mahadihasantarunno@gmail.com </span> </i>
+				</div>
+				<div class="social">
+					<a href="#"> <i class="fab fa-facebook"> <span></span> </i> </a>
+					<a href="#"> <i class="fab fa-instagram"> <span></span> </i> </a>
+					<a href="#"> <i class="fab fa-twitter"> <span></span> </i> </a>
+					<a href="#"> <i class="fab fa-youtube"> <span></span> </i> </a>
+				</div>
+			</section>
+		</div>
+		<script type="text/javascript" src="../JavaScript/books.js"></script>
+	</body>
+</html>

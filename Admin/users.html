@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"  />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../Css/books.css">
+		<title>TARUNNO READS | admin</title>
+	</head>
+	<body>
+		<div class="container">
+			<section class="nav" style="
+				grid-row: 1 / 2;
+			">
+				<h1><span class="heading">TARUNNO READS</span><span class="admin">admin</span></h1>
+				<ul>
+					<li> <a href="home.html"><i class="fas fa-home"></i></a> </li>
+					<li> <a href="books.html"><i class="fas fa-book"></i></a> </li>
+					<li> <a href="users.html"><i class="fas fa-users"></i></a> </li>
+					<li> <a href="orders.html"><i class="fas fa-tasks"></i></a> </li>
+				</ul>
+			</section>
+			<section class="table" style="
+				grid-row: 2 / 3;">
+				<h1>Users</h1>
+				<div class="buttons">
+					<input type="text" class="book-search"><button class="book-search-btn" type="button"><i class="fas fa-search"></i></button>
+					<button type="button" onclick="delete_all()" class="delete-all-btn"><i class="far fa-trash-alt"></i><div class="delete-all"> <p>Delete all</p></div></button>
+				</div>
+				<table>
+					<thead>
+						<th style="width: 100px;">ID</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th style="width: 50px;">Delete</th>
+					</thead>
+					<tbody class="table-res">
+					</tbody>
+				</table>
+			</section>
+			<section class="footer">
+				<h3> TARUNNO READS | mahadi hasan tarunno</h3>
+				<div class="contect">
+					<i class="fas fa-phone"> <span> 01863987793 </span> </i>
+					<i class="fas fa-envelope"> <span> mahadihasantarunno@gmail.com </span> </i>
+				</div>
+				<div class="social">
+					<a href="#"> <i class="fab fa-facebook"> <span></span> </i> </a>
+					<a href="#"> <i class="fab fa-instagram"> <span></span> </i> </a>
+					<a href="#"> <i class="fab fa-twitter"> <span></span> </i> </a>
+					<a href="#"> <i class="fab fa-youtube"> <span></span> </i> </a>
+				</div>
+			</section>
+		</div>
+		<script src="../JavaScript/users.js" charset="utf-8"></script>
+	</body>
+</html>
