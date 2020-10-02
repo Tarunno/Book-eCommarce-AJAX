@@ -1,0 +1,51 @@
+.full-view-container{
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100vh;
+	width: 100vw;
+	top: 0px;
+	z-index: 10000;
+}
+.full-view{
+	width: 500px;
+	height: 300px;
+	overflow-y: scroll;
+	background-color: white;
+	border-radius: 7px;
+	box-shadow: 1px 1px 9px gray;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 30px;
+}
+.product{
+	width: 100%;
+	height: 70px;
+	margin-bottom: 5px;
+}
+.order-res img{
+	height: 70px;
+	width: 60px;
+	float: left;
+}
+.product-name{
+	margin-left: 70px;
+}
+.product-price{
+	margin-left: 70px;
+}
+.order-res .username{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.full-view-off{
+	padding: 10px 15px;
+	border-radius: 60px;
+	float: right;
+	font-size: 20px;
+	border: none;
+	background-color: lightgray;
+	color: gray;
+	cursor: pointer;
+}
