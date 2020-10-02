@@ -247,3 +247,4 @@
 		$row = $result->fetch_assoc();
 		json_encode($row);
 	}
+ 
