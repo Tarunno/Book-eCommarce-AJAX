@@ -32,7 +32,10 @@ function update(id){
 
 	let body = document.body;
     let container = document.createElement('div');
+	let overlay = document.createElement('div');
+
     container.setAttribute('class', 'edit-window');
+	overlay.setAttribute('class', 'overlay');
 
     let cencel_btn = document.createElement('button');
     cencel_btn.setAttribute('class', 'cencel-btn');
@@ -63,7 +66,8 @@ function update(id){
     `;
     form.setAttribute('class', 'edit-form');
     container.appendChild(form);
-    body.appendChild(container);
+	overlay.appendChild(container)
+    body.appendChild(overlay);
 
 	xhr = new XMLHttpRequest();
     xhr.open('GET', '../includes/book.inc.php?book='+id, true);
@@ -99,7 +103,7 @@ function update(id){
 	}
 }
 function close_window(){
-    let container = document.querySelectorAll('.edit-window');
+    let container = document.querySelectorAll('.overlay');
 	container.forEach((item, i) => {
 		document.body.removeChild(item);
 	});
