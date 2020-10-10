@@ -4,9 +4,13 @@
 ## Landing page
 ![](GIF/view1.gif)
 ## Main page
-![](GIF/view2.gif)
-## Admin page
-![](GIF/view3.gif)
+![](GIF/home.gif)
+## Cart
+![](GIF/cart.gif)
+## Admin - books
+![](GIF/admin.gif)
+## Admin - Orders
+![](GIF/order.gif)
 
 The admin panel has 4 eidting options : users, orders, products management. The admin can remove a member and his/her orders.
 admin can add products and update them. Simple eCommerce website for selling books.
