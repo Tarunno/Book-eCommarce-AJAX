@@ -8,7 +8,7 @@
 ## Cart
 ![](GIF/cart.gif)
 ## Admin - books
-![](GIF/update.gif)
+![](GIF/admin.gif)
 ## Admin - Orders
 ![](GIF/order.gif)
 
