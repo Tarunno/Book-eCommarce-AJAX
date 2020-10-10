@@ -10,7 +10,7 @@
 ## Admin - books
 ![](GIF/update.gif)
 ## Admin - Orders
-![](GIF/Order.gif)
+![](GIF/order.gif)
 
 The admin panel has 4 eidting options : users, orders, products management. The admin can remove a member and his/her orders.
 admin can add products and update them. Simple eCommerce website for selling books.
