@@ -713,7 +713,7 @@ a{
 /* FILTER */
 .full-view-filter{
 	position: fixed;
-	overflow-y: scroll;
+	overflow-y: auto;
 	overflow-x: hidden;
 	top: 50%;
 	left: 50%;
@@ -907,7 +907,7 @@ a{
 
 /* CART */
 .full-view-cart{
-	overflow-y: scroll;
+	overflow-y: auto;
 	position: fixed;
 	top: 50%;
 	left: 50%;
