@@ -1,7 +1,7 @@
 // SESSION
 var session = sessionStorage.key('email');
 if(session == null){
-	window.location.replace("http://localhost/book%20store/home.html");
+	window.location.replace("http://localhost/book-store/home.html");
 }
 else{
 	var xhr = new XMLHttpRequest();
