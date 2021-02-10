@@ -12,7 +12,7 @@ let margin = 0;
 
 function slide(){
 	margin -= window_width;
-	if(margin <= -background_width){
+	if(margin <= -background_width + 200){
 		background_image.style.transition = "none";
 		margin = 0;
 	}
@@ -223,7 +223,7 @@ function swap_login(){
 	                document.querySelector('#error').innerHTML = "";
 					var login_email = document.querySelector('#login-email').value;
 					sessionStorage.setItem('email', login_email);
-					window.location.replace("http://localhost/book%20store/index.html");
+					window.location.replace("http://localhost/book-store/index.html");
 	            }
 	        }
 	    }
