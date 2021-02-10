@@ -9,7 +9,7 @@
 .full-view{
 	width: 500px;
 	height: 300px;
-	overflow-y: scroll;
+	overflow-y: auto;
 	background-color: white;
 	border-radius: 7px;
 	box-shadow: 1px 1px 9px gray;
