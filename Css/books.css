@@ -89,6 +89,7 @@ table{
 	border-radius: 7px;
 	border: 0.005cm solid #ebebeb;
 	box-shadow: 3px 3px 3px lightgray;
+	padding-bottom: 30px;
 }
 .table > h1{
 	display: inline;
@@ -99,7 +100,7 @@ table{
 }
 .buttons{
 	width: 320px;
-	height: 100%;
+	height: 30px;
 	float: right;
 }
 .book-search{
